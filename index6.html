@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Morphing Buttons Concept | Demo 6</title>
+		<meta name="description" content="Morphing Buttons Concept: Inspiration for revealing content by morphing the action element" />
+		<meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/PageLoadingEffects/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19004"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header class="codrops-header">
+				<h1>Morphing Buttons Concept</h1>
+				<p>Inspiration for revealing content by morphing the action element. Examples:</p>
+				<nav class="codrops-demos">
+					<a href="index.html">Login/Signup</a>
+					<a href="index2.html">Terms</a>
+					<a href="index3.html">Info Overlay</a>
+					<a href="index4.html">Subscribe</a>
+					<a href="index5.html">Share</a>
+					<a class="current-demo" href="index6.html">Video Player</a>
+					<a href="index7.html">Sidebar Settings</a>
+				</nav>
+			</header>
+			<section>
+				<div class="mockup-content">
+					<div class="mockup-left"></div>
+					<div class="mockup-right">
+						<h2>Tales of a Tiger</h2>
+						<p>Turnip greens yarrow ricebean rutabaga endive cauliflower. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut broccoli and quinoa beets. Love cherries green heaven.</p>
+						<div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Trailer<span>01:43</span></button>
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close">Close the dialog</span>
+										<div class="video-mockup"></div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+					</div>
+				</div><!-- /form-mockup -->
+			</section>
+			<section class="related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a href="http://tympanus.net/Development/ProgressButtonStyles/">
+					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/12/ProgressButtonStyles-300x162.png" />
+					<h3>Progress Button Styles</h3>
+				</a>
+				<a href="http://tympanus.net/Development/SidebarTransitions/">
+					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/08/sidebartransitions-300x162.png" />
+					<h3>Sidebar Transitions</h3>
+				</a>
+			</section>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/uiMorphingButton_fixed.js"></script>
+		<script>
+			(function() {
+				new UIMorphingButton( document.querySelector( '.morph-button' ), {
+					closeEl : '.icon-close'
+				} );
+			})();
+		</script>
+	</body>
+</html>
