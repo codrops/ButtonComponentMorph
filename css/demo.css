@@ -143,6 +143,10 @@ section > p:first-child {
 	text-align: center;
 }
 
+section.related {
+	text-align: center;
+}
+
 .related p {
 	font-weight: 700;
 }
@@ -263,6 +267,8 @@ section > p:first-child {
 
 .mockup-left {
 	float: left;
+	max-width: 100%;
+	overflow: hidden;
 	width: 300px;
 	margin: 0 40px 50px 0;
 	background: rgba(0,0,0,0.1);
@@ -324,10 +330,9 @@ html.demo-7, .demo-7 body {
 	}
 }
 
-
-@media screen and (max-width: 35em) {
-	section p {
-		
+@media screen and (max-width: 400px) {
+	.mockup-content > span:nth-last-child(2) {
+		width: calc(100% - 210px);
 	}
 }
 

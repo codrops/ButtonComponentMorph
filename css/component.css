@@ -422,6 +422,11 @@
 	overflow: auto;
 }
 
+.no-transition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
@@ -447,5 +452,41 @@
 	.morph-button-sidebar {
 		bottom: 0px;
 		left: 0px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.morph-button-fixed,
+	.morph-button-fixed .morph-content {
+		width: 200px;
+		height: 80px;
+	}
+
+	.morph-button-fixed > button {
+		font-size: 75%;
+	}
+
+	.morph-button-inflow .morph-content .morph-clone {
+		font-size: 0.9em;
+	}
+
+	.morph-button-modal-4,
+	.morph-button-modal-4 .morph-content {
+		width: 220px;
+		height: 120px;
+	}
+
+	.morph-button-modal-4 > button {
+		font-size: 100%;
+		line-height: 50px;
+	}
+
+	.morph-button-modal-4 > button span {
+		display: block;
+	}
+
+	.morph-button-modal-4 .morph-clone {
+		right: 83px;
+		bottom: 26px;
 	}
 }

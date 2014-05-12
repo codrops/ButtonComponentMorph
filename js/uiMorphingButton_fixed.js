@@ -122,6 +122,7 @@
 		// set the left and top values of the contentEl (same like the button)
 		var buttonPos = this.button.getBoundingClientRect();
 		// need to reset
+		classie.addClass( this.contentEl, 'no-transition' );
 		this.contentEl.style.left = 'auto';
 		this.contentEl.style.top = 'auto';
 		
@@ -131,10 +132,14 @@
 			self.contentEl.style.top = buttonPos.top + 'px';
 			
 			if( self.expanded ) {
+				classie.removeClass( self.contentEl, 'no-transition' );
 				classie.removeClass( self.el, 'open' );
 			}
 			else {
-				setTimeout( function() { classie.addClass( self.el, 'open' ); }, 25 );
+				setTimeout( function() { 
+					classie.removeClass( self.contentEl, 'no-transition' );
+					classie.addClass( self.el, 'open' ); 
+				}, 25 );
 			}
 		}, 25 );
 	}
