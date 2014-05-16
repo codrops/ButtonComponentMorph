@@ -442,19 +442,6 @@
 	}
 }
 
-@media screen and (max-width: 500px) {
-	.morph-button-sidebar,
-	.morph-button-sidebar .morph-content {
-		width: 100% !important;
-		height: 60px !important;
-	}
-
-	.morph-button-sidebar {
-		bottom: 0px;
-		left: 0px;
-	}
-}
-
 @media screen and (max-width: 400px) {
 	.morph-button-fixed,
 	.morph-button-fixed .morph-content {
@@ -464,6 +451,10 @@
 
 	.morph-button-fixed > button {
 		font-size: 75%;
+	}
+
+	.morph-button-sidebar > button {
+		font-size: 1.6em;
 	}
 
 	.morph-button-inflow .morph-content .morph-clone {
@@ -488,5 +479,20 @@
 	.morph-button-modal-4 .morph-clone {
 		right: 83px;
 		bottom: 26px;
+	}
+
+	.morph-button-sidebar,
+	.morph-button-sidebar .morph-content {
+		width: 100% !important;
+		height: 60px !important;
+	}
+
+	.morph-button-sidebar {
+		bottom: 0px;
+		left: 0px;
+	}
+
+	.morph-button-sidebar.open .morph-content {
+		height: 100% !important;
 	}
 }
