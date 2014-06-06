@@ -1,0 +1,23 @@
+{
+  "name": "ButtonComponentMorph",
+  "version": "0.0.0",
+  "homepage": "https://github.com/FreakTheMighty/ButtonComponentMorph",
+  "authors": [
+    "FreakTheMighty <jvanderdoes@gmail.com>"
+  ],
+  "description": "Morphing button",
+  "main": [
+      "js/classie.js",
+      "js/modernizr.custom.js",
+      "js/uiMorphingButton_fixed.js",
+      "js/uiMorphingButton_inflow.js",
+      "css/component.css",
+      "css/content.css",
+      "css/normalize.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.html"
+  ]
+}
