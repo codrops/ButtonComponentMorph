@@ -1,9 +1,9 @@
 {
   "name": "ButtonComponentMorph",
   "version": "0.0.0",
-  "homepage": "https://github.com/FreakTheMighty/ButtonComponentMorph",
+  "homepage": "https://github.com/codrops/ButtonComponentMorph",
   "authors": [
-    "FreakTheMighty <jvanderdoes@gmail.com>"
+    "Codrops <info@tympanus.net>"
   ],
   "description": "Morphing button",
   "main": [
