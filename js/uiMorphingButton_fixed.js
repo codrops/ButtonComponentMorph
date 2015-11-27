@@ -68,6 +68,15 @@
 				closeEl.addEventListener( 'click', function() { self.toggle(); } );
 			}
 		}
+		document.onkeydown = function(evt) {
+		    evt = evt || window.event;
+			if( self.options.closeEl !== '' ) {
+				var closeEl = self.el.querySelector( self.options.closeEl );
+				if( closeEl && self.expanded) {
+					self.toggle();
+				}
+			}
+		};
 	}
 
 	UIMorphingButton.prototype.toggle = function() {
